@@ -32,6 +32,7 @@
     <link href='//dash_ref_Transformations/Entry/multmatrix (m)/0'>
     <link href='//dash_ref_Transformations/Entry/color ("colorname")/0'>
     <link href='//dash_ref_Transformations/Entry/color ([r, g, b, a])/0'>
+    <link href='//dash_ref_Transformations/Entry/offset (r|delta, chamfer)/0'>
     <link href='//dash_ref_Transformations/Entry/hull()/0'>
     <link href='//dash_ref_Transformations/Entry/minkowski()/0'>
     <link href='//dash_ref/Category/Boolean operations/1'>
@@ -67,8 +68,10 @@
     <link href='//dash_ref_Mathematical/Entry/max/0'>
     <link href='//dash_ref/Category/Functions/1'>
     <link href='//dash_ref_Functions/Entry/lookup/0'>
+    <link href='//dash_ref_Functions/Entry/let/0'>
     <link href='//dash_ref_Functions/Entry/str/0'>
     <link href='//dash_ref_Functions/Entry/chr/0'>
+    <link href='//dash_ref_Functions/Entry/concat/0'>
     <link href='//dash_ref_Functions/Entry/search/0'>
     <link href='//dash_ref_Functions/Entry/version/0'>
     <link href='//dash_ref_Functions/Entry/version_num/0'>
@@ -88,7 +91,7 @@
     <link href='//dash_ref_Other/Entry/import ("....stl")/0'>
     <link href='//dash_ref_Other/Entry/linear_extrude (height, center, convexity, twist, slices)/0'>
     <link href='//dash_ref_Other/Entry/rotate_extrude (convexity)/0'>
-    <link href='//dash_ref_Other/Entry/surface (file = "....dat", center, convexity)/0'>
+    <link href='//dash_ref_Other/Entry/surface (file, center, invert, convexity)/0'>
     <link href='//dash_ref_Other/Entry/projection (cut)/0'>
     <link href='//dash_ref_Other/Entry/render (convexity)/0'>
     <link href='//dash_ref_Other/Entry/children ([idx])/0'>
@@ -97,6 +100,9 @@
     <link href='//dash_ref_Special variables/Entry/$fs/0'>
     <link href='//dash_ref_Special variables/Entry/$fn/0'>
     <link href='//dash_ref_Special variables/Entry/$t/0'>
+    <link href='//dash_ref_Special variables/Entry/$vpr/0'>
+    <link href='//dash_ref_Special variables/Entry/$vpt/0'>
+    <link href='//dash_ref_Special variables/Entry/$vpd/0'>
   </head>
   <body>
     <header>
@@ -271,6 +277,12 @@
           <tr id='//dash_ref_Transformations/Entry/color ([r, g, b, a])/0'>
             <td class='description' colspan='2'>
               <div class='name'><p><a href="https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Transformations#color">color</a> ([r, g, b, a])</p></div>
+              <div class='notes'></div>
+            </td>
+          </tr>
+          <tr id='//dash_ref_Transformations/Entry/offset (r|delta, chamfer)/0'>
+            <td class='description' colspan='2'>
+              <div class='name'><p><a href="http://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Transformations#offset">offset</a> (r|delta, chamfer)</p></div>
               <div class='notes'></div>
             </td>
           </tr>
@@ -500,6 +512,12 @@
               <div class='notes'></div>
             </td>
           </tr>
+          <tr id='//dash_ref_Functions/Entry/let/0'>
+            <td class='description' colspan='2'>
+              <div class='name'><p><a href="http://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Mathematical_Functions#let">let</a></p></div>
+              <div class='notes'></div>
+            </td>
+          </tr>
           <tr id='//dash_ref_Functions/Entry/str/0'>
             <td class='description' colspan='2'>
               <div class='name'><p><a href="https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/String_Functions#str">str</a></p></div>
@@ -509,6 +527,12 @@
           <tr id='//dash_ref_Functions/Entry/chr/0'>
             <td class='description' colspan='2'>
               <div class='name'><p><a href="https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/String_Functions#chr">chr</a></p></div>
+              <div class='notes'></div>
+            </td>
+          </tr>
+          <tr id='//dash_ref_Functions/Entry/concat/0'>
+            <td class='description' colspan='2'>
+              <div class='name'><p><a href="http://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Mathematical_Functions#concat">concat</a></p></div>
               <div class='notes'></div>
             </td>
           </tr>
@@ -627,9 +651,9 @@
               <div class='notes'></div>
             </td>
           </tr>
-          <tr id='//dash_ref_Other/Entry/surface (file = "....dat", center, convexity)/0'>
+          <tr id='//dash_ref_Other/Entry/surface (file, center, invert, convexity)/0'>
             <td class='description' colspan='2'>
-              <div class='name'><p><a href="https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Other_Language_Features#Surface">surface</a> (file = &quot;....dat&quot;, center, convexity)</p></div>
+              <div class='name'><p><a href="http://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Other_Language_Features#Surface">surface</a> (file, center, invert, convexity)</p></div>
               <div class='notes'></div>
             </td>
           </tr>
@@ -692,6 +716,33 @@
             </td>
             <td class='td_notes'>
               <div class='td_notes'><p>animation step</p></div>
+            </td>
+          </tr>
+          <tr id='//dash_ref_Special variables/Entry/$vpr/0'>
+            <td class='description'>
+              <div class='name'><p><a href="http://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Other_Language_Features#.24vpr.2C_.24vpt_and_.24vpd">$vpr</a></p></div>
+              <div class='notes'></div>
+            </td>
+            <td class='td_notes'>
+              <div class='td_notes'><p>viewport rotation</p></div>
+            </td>
+          </tr>
+          <tr id='//dash_ref_Special variables/Entry/$vpt/0'>
+            <td class='description'>
+              <div class='name'><p><a href="http://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Other_Language_Features#.24vpr.2C_.24vpt_and_.24vpd">$vpt</a></p></div>
+              <div class='notes'></div>
+            </td>
+            <td class='td_notes'>
+              <div class='td_notes'><p>viewport translation</p></div>
+            </td>
+          </tr>
+          <tr id='//dash_ref_Special variables/Entry/$vpd/0'>
+            <td class='description'>
+              <div class='name'><p><a href="http://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Other_Language_Features#.24vpr.2C_.24vpt_and_.24vpd">$vpd</a></p></div>
+              <div class='notes'></div>
+            </td>
+            <td class='td_notes'>
+              <div class='td_notes'><p>viewport camera distance</p></div>
             </td>
           </tr>
         </table>

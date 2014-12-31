@@ -153,6 +153,9 @@ cheatsheet do
       name '[color](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Transformations#color) ([r, g, b, a])'
     end
     entry do
+      name '[offset](http://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Transformations#offset) (r|delta, chamfer)'
+    end
+    entry do
       name '[hull](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Transformations#hull)()'
     end
     entry do
@@ -270,10 +273,16 @@ cheatsheet do
       name '[lookup](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Mathematical_Functions#lookup)'
     end
     entry do
+      name '[let](http://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Mathematical_Functions#let)'
+    end
+    entry do
       name '[str](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/String_Functions#str)'
     end
     entry do
       name '[chr](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/String_Functions#chr)'
+    end
+    entry do
+      name '[concat](http://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Mathematical_Functions#concat)'
     end
     entry do
       name '[search](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Other_Language_Features#Search)'
@@ -335,7 +344,7 @@ cheatsheet do
       name '[rotate_extrude](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Using_the_2D_Subsystem#Rotate_Extrude) (convexity)'
     end
     entry do
-      name '[surface](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Other_Language_Features#Surface) (file = "....dat", center, convexity)'
+      name '[surface](http://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Other_Language_Features#Surface) (file, center, invert, convexity)'
     end
     entry do
       name '[projection](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Using_the_2D_Subsystem#3D_to_2D_Projection) (cut)'
@@ -366,6 +375,18 @@ cheatsheet do
     entry do
       name '[$t](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Other_Language_Features#.24t)'
       td_notes "animation step"
+    end
+    entry do
+      name '[$vpr](http://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Other_Language_Features#.24vpr.2C_.24vpt_and_.24vpd)'
+      td_notes "viewport rotation"
+    end
+    entry do
+      name '[$vpt](http://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Other_Language_Features#.24vpr.2C_.24vpt_and_.24vpd)'
+      td_notes "viewport translation"
+    end
+    entry do
+      name '[$vpd](http://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Other_Language_Features#.24vpr.2C_.24vpt_and_.24vpd)'
+      td_notes "viewport camera distance"
     end
   end
 
