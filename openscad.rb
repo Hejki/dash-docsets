@@ -68,14 +68,9 @@ cheatsheet do
     id '2D'
 
     entry do
-      name '[circle](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Using_the_2D_Subsystem#circle) (radius | d=diameter)'
+      name '[circle](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Using_the_2D_Subsystem#circle) (r=radius | d=diameter)'
       # notes "
       # Creates a circle at the origin of the coordinate system. The argument name is optional.
-      # "
-    end
-    entry do
-      name '[square](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Using_the_2D_Subsystem#square) (size, center)'
-      # notes "
       # "
     end
     entry do
@@ -101,7 +96,7 @@ cheatsheet do
       # "
     end
     entry do
-      name '[text](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Text) (t, size, font, halign, valign, spacing, direction, language, script)'
+      name '[text](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Text) (text, size, font, halign, valign, spacing, direction, language, script)'
       # notes "
       # [Note: Requires version 2015.03]
       # Create text using fonts installed on the local system or provided as separate font file.
@@ -426,5 +421,6 @@ cheatsheet do
   * [MCAD library](https://github.com/openscad/MCAD)
   * [Other links](http://fablabamersfoort.nl/book/openscad)
   * Cheatset created by [Hejki](https://github.com/Hejki/dash-docsets) based by [OpenSCAD CheatSheet](http://www.openscad.org/cheatsheet/index.html)
+  * Thanks to [Matt Sephton](https://github.com/gingerbeardman) for update
   "
 end
