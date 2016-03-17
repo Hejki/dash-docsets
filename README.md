@@ -1,4 +1,5 @@
 # dash-docsets
 Dash docsets
 
-## OpenSCAD CheatSheet v2015.03
+## OpenSCAD CheatSheet
+v2015.03
