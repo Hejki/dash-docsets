@@ -74,13 +74,6 @@ cheatsheet do
       # "
     end
     entry do
-      name '[square](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Using_the_2D_Subsystem#square) ([width, height], center)'
-      # notes "
-      # Creates a square at the origin of the coordinate system. When center is true the square will be centered on the origin,
-      # otherwise it is created in the first quadrant.
-      # "
-    end
-    entry do
       name '[polygon](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Using_the_2D_Subsystem#polygon) ([points])'
       # notes "
       # "
@@ -93,6 +86,13 @@ cheatsheet do
       # ```
       # polygon(points = [ [x, y], ... ], paths = [ [p1, p2, p3..], ...], convexity = N);
       # ```
+      # "
+    end
+    entry do
+      name '[square](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Using_the_2D_Subsystem#square) ([width, height], center)'
+      # notes "
+      # Creates a square at the origin of the coordinate system. When center is true the square will be centered on the origin,
+      # otherwise it is created in the first quadrant.
       # "
     end
     entry do
@@ -112,9 +112,6 @@ cheatsheet do
     id '3D'
 
     entry do
-      name '[sphere](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Primitive_Solids#sphere) (radius | d=diameter)'
-    end
-    entry do
       name '[cube](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Primitive_Solids#cube) (size)'
     end
     entry do
@@ -128,6 +125,9 @@ cheatsheet do
     end
     entry do
       name '[polyhedron](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Primitive_Solids#polyhedron) (points, triangles, convexity)'
+    end
+    entry do
+      name '[sphere](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Primitive_Solids#sphere) (radius | d=diameter)'
     end
   end
 
@@ -211,18 +211,6 @@ cheatsheet do
       name '[abs](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Mathematical_Functions#abs)'
     end
     entry do
-      name '[sign](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Mathematical_Functions#sign)'
-    end
-    entry do
-      name '[sin](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Mathematical_Functions#sin)'
-    end
-    entry do
-      name '[cos](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Mathematical_Functions#cos)'
-    end
-    entry do
-      name '[tan](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Mathematical_Functions#tan)'
-    end
-    entry do
       name '[acos](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Mathematical_Functions#acos)'
     end
     entry do
@@ -235,16 +223,16 @@ cheatsheet do
       name '[atan2](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Mathematical_Functions#atan2)'
     end
     entry do
-      name '[floor](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Mathematical_Functions#floor)'
-    end
-    entry do
-      name '[round](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Mathematical_Functions#round)'
-    end
-    entry do
       name '[ceil](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Mathematical_Functions#ceil)'
     end
     entry do
-      name '[ln](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Mathematical_Functions#ln)'
+      name '[cos](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Mathematical_Functions#cos)'
+    end
+    entry do
+      name '[exp](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Mathematical_Functions#exp)'
+    end
+    entry do
+      name '[floor](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Mathematical_Functions#floor)'
     end
     entry do
       name '[len](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Mathematical_Functions#len)'
@@ -253,25 +241,37 @@ cheatsheet do
       name '[let](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Mathematical_Functions#let)'
     end
     entry do
+      name '[ln](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Mathematical_Functions#ln)'
+    end
+    entry do
       name '[log](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Mathematical_Functions#log)'
     end
     entry do
-      name '[pow](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Mathematical_Functions#pow)'
-    end
-    entry do
-      name '[sqrt](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Mathematical_Functions#sqrt)'
-    end
-    entry do
-      name '[exp](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Mathematical_Functions#exp)'
-    end
-    entry do
-      name '[rands](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Mathematical_Functions#rands)'
+      name '[max](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Mathematical_Functions#max)'
     end
     entry do
       name '[min](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Mathematical_Functions#min)'
     end
     entry do
-      name '[max](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Mathematical_Functions#max)'
+      name '[pow](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Mathematical_Functions#pow)'
+    end
+    entry do
+      name '[rands](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Mathematical_Functions#rands)'
+    end
+    entry do
+      name '[round](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Mathematical_Functions#round)'
+    end
+    entry do
+      name '[sign](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Mathematical_Functions#sign)'
+    end
+    entry do
+      name '[sin](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Mathematical_Functions#sin)'
+    end
+    entry do
+      name '[sqrt](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Mathematical_Functions#sqrt)'
+    end
+    entry do
+      name '[tan](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Mathematical_Functions#tan)'
     end
   end
   
